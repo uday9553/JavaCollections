@@ -14,7 +14,6 @@ public class TreeSetExample {
         //stringSortedSet.add(null); TreeSet will not allow null values u will get NullPointerException
         stringTreeSet.add("quiz"); 
         stringTreeSet.add("code"); 
-        
         System.out.println(stringTreeSet.contains("code"));
         
         System.out.println("Sorted Set: " + stringTreeSet); 

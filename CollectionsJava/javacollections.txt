@@ -1,0 +1,112 @@
+Collections:
+Collections are used in situation where data needs to be stored dynamically
+
+Interfaces in Collections Hirarchy:
+1.Set
+2.List
+3.Map
+4.Queue(not implemented from Collection interface , but part of Collection).
+
+
+interface Collection extends Iterable<E>
+{
+	boolean add(E paramE);
+	boolean remove(Object paramObj);
+	int (size);
+	boolean isEmpty();
+	void clear();
+	boolean contains(Object paramOnj);
+	boolean containsAll(Colletioc<? > paramCollection);
+	boolean containsAll(Colletioc<? extends E> paramCollection);
+	
+	boolean removeAll(Colletioc<? > paramCollection);
+	boolean rettaibAll(Colletioc<? > paramCollection);
+	Iterator<E> iterator();
+}
+
+
+List:
+implementation of the list interface maintains the insertion-order.
+ex:if you add element A before B,then it's position will be always before A only.
+Note:remove(int index) is possible in list only
+
+examples of list:
+
+1.ArrayList:
+	i)accessing variables in ArrayList is very fast because underlying datastructure is array
+	ii)Insertion and deletion are slower compared to LinkedList,because adding and deleting may need to create new copy of array
+	iii)It's not Thread Safe
+2.Vector:
+	i)It is Thread safe(all methods are synchronized).
+	ii)almost same like ArrayList
+3.LinkedList
+	i)Elements are doubly linked both forward and backword
+	ii)LinkedList also implements Dequeue,so supports methods like peek(),poll(),remove()
+	iii)fast insertion and deletion
+	iv)maintains insertion order
+	v)It's not Thread Safe
+
+Set:no duplicate values are allowed.
+ ex: if(vaue1==value2)
+	then allows only one value1.
+examples of set are
+
+1.SortedSet.
+	i)main difference between Set and SortedSet is 
+		Sortedset maintains sorted order,whereas Set interface doesnot guarantee order
+	methods supported in SortedSet are
+		subset(E fromElmement, E toElement);,
+		headset(E toElement);,
+		tailSet(E fromElement)
+		E first();
+		E last();
+2.NavigableSet.
+	i)same like sortedset which has additional feature like navigation.
+	methods in NavigableSet are
+		E lower(E e);
+		E floor(E e);
+		E ceiling(E e);
+		E higher(E e);
+
+
+classes of set
+
+1. HashSet(implements set)
+	i)doesnot guarantee order of sorting
+	ii)uses hashing technique/implementation
+	iii)uses hashCode().
+	iv)null values are allowed in HashSet
+	//simple any class starts with Hash represents no order insertion
+2.LinkedHashSet
+	i)Maintains insertion order.
+	ii)unsorted.
+	iii)uses hashCode().
+3.TreeSet(inmplements Set,NavigableSet)
+	i)doesnot guarantee insertion order
+	ii)mainatain Sorted order.
+	///simple any class starts with Tree represents sortedorder
+
+Map interface
+	it follows key value pair	
+	syntax: Map<k,v>
+SortedMap
+	follows sort order on key value
+NavigableMap
+
+
+classes 
+1.HashMap implements Map
+	i)unsorted
+	ii)uses hashCode()
+	iii)not synchronized
+2.HashTable implements Map
+	i)same like HashMap but it is Thread-safe.
+	ii)allows a key with null value.
+3.LinkedHashMap
+	i)insertion order is mainatained.
+4.TreeMap.
+	i)sorted order
+	ii)implements NavigableMap.
+	///simple any class starts with Tree represents sortedorder
+		
+Queue

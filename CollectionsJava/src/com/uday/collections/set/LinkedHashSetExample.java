@@ -16,10 +16,10 @@ public class LinkedHashSetExample {
 		linkedset.add("A");
 		linkedset.add("E");
 		linkedset.add(null);
-
 		System.out.println("Size of LinkedHashSet = " + linkedset.size());
 		System.out.println("Original LinkedHashSet:" + linkedset);
 		linkedset.add("C");
+		//removal using index is not possibe
 		System.out.println("Removing D from LinkedHashSet: " + linkedset.remove("D"));
 		System.out.println("Trying to Remove Z which is not " + "present: " + linkedset.remove("Z"));
 		System.out.println("Checking if A is present=" + linkedset.contains("A"));

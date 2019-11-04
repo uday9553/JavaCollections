@@ -17,7 +17,6 @@ class VectorExample {
         integerVector.add(3); 
         integerVector.add(4); 
         integerVector.add(null);
-         
   
         // printing elements 
         System.out.println("elements in vector are: " + integerVector); 

@@ -24,7 +24,6 @@ public class LinkedlistExample {
         stringLinkedlist.add("G"); 
         stringLinkedlist.add(null);
         System.out.println("Linked list : " + stringLinkedlist); 
-  
         // Removing elements from the linked list 
         stringLinkedlist.remove("B"); 
         stringLinkedlist.remove(3); 

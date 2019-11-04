@@ -28,7 +28,6 @@ class ArraylistExample
   
         // Printing elements 
         System.out.println(arrlist); 
-  
         // Remove element at index 3 
         arrlist.remove(3); 
   
