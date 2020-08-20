@@ -6,7 +6,7 @@ Interfaces in Collections Hirarchy:
 2.List
 3.Map
 4.Queue(not implemented from Collection interface , but part of Collection).
-
+ 
 
 interface Collection extends Iterable<E>
 {
