@@ -1,6 +1,6 @@
 Collections:
 Collections are used in situation where data needs to be stored dynamically
-
+  
 Interfaces in Collections Hirarchy:
 1.Set
 2.List
